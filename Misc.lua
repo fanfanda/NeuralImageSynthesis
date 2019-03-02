@@ -14,7 +14,7 @@ end
 -- Function to iterate over nested table and return all non-table entries in flat table
 function deep_table_iter(data, flat_table)
     if type(data) == "table" then
-        for k,v in pairs(data) do 
+        for k, v in pairs(data) do 
             deep_table_iter(v, flat_table)  
         end
     else 
