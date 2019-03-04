@@ -19,7 +19,7 @@ cmd:option('-reflectance', false, 'if true, use reflectance padding')
 
 -- Output 
 cmd:option('-output_file', 'path/to/HDF5file', 'Name of the torch output file containing the activations')
-
+-- 获取图片在给定参数layers下的激活
 local function main(params)
     paths.dofile('Misc.lua')
     -- Set gpu mode

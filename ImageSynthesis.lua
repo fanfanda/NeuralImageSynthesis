@@ -60,8 +60,8 @@ local function main(params)
     local f = hdf5.open(params.input_file, 'r')
     local opt_targets = f:all()
     f:close()
-    print(opt_targets)
-    -- return opt_targets
+    -- print(opt_targets)
+
     -- Set up new network with appropriate loss layers
     local net = nn.Sequential()
     local loss_modules = {}
